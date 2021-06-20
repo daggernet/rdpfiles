@@ -11,7 +11,6 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: administrator
 echo Pass: dagger#rdp01
 curl -O https://raw.githubusercontent.com/daggernet/rdpfiles/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://github.com/daggernet/rdpfiles/raw/master/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
