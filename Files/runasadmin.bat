@@ -1,9 +1,20 @@
-@echo off
+@echo Dagger RDP Deploy
+@echo
+@echo
+@echo Otohits: 3ad83f0a-78ee-422b-b2f2-4a1605540062
+@echo
+@echo
+@echo Hieleap: BUETFUXF8mEDoUErizJgZpiy5gZ3g54R
+@echo
+@echo
 tzutil /s "Montevideo Standard Time"
 start /wait notepad++.exe /S
 start /wait winrar.exe /S
+start /wait D:\otohits.exe /S
+start /wait D:\hitleap.exe /S
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarSmallIcons /t REG_DWORD /d 1 /f
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d D:\wallpaper.jpg /f
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 taskkill /f /im explorer.exe
 start explorer.exe
+pause >nul
