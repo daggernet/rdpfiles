@@ -1,4 +1,5 @@
 @echo off
+tzutil /s "Montevideo Standard Time"
 start /wait notepad++.exe /S
 start /wait winrar.exe /S
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarSmallIcons /t REG_DWORD /d 1 /f
