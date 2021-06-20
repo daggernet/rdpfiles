@@ -9,9 +9,6 @@ start /wait D:\notepad++.exe /S
 start /wait D:\winrar.exe /S
 start /wait D:\otohits.exe /S
 start /wait D:\hitleap.exe
-REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarSmallIcons /t REG_DWORD /d 1 /f
-reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d D:\wallpaper.jpg /f
-RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
-taskkill /f /im explorer.exe
-start explorer.exe
-pause >nul
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d d:\wallpaper.bmp /f 
+RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters 
+pause 
