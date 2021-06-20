@@ -5,8 +5,8 @@ echo.
 @echo Hieleap: BUETFUXF8mEDoUErizJgZpiy5gZ3g54R
 echo.
 tzutil /s "Montevideo Standard Time"
-@echo off start /wait notepad++.exe /S
-@echo off start /wait winrar.exe /S
+start /wait notepad++.exe /S
+start /wait winrar.exe /S
 start /wait D:\otohits.exe /S
 start /wait D:\hitleap.exe /S
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarSmallIcons /t REG_DWORD /d 1 /f
