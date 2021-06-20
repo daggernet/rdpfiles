@@ -11,9 +11,6 @@ echo User: administrator
 echo Pass: dagger#rdp01
 curl -O https://raw.githubusercontent.com/daggernet/rdpfiles/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
 
-reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d d:\wallpaper.bmp /f 
-RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters 
-
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
