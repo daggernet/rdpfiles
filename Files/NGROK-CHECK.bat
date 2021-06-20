@@ -13,8 +13,6 @@ curl -O https://raw.githubusercontent.com/daggernet/rdpfiles/main/Files/DisableP
 
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d d:\wallpaper.bmp /f 
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters 
-pause 
-
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
