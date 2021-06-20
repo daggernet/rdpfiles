@@ -17,6 +17,4 @@ sc config Audiosrv start= auto >nul
 ICACLS C:\Windows\Temp /grant administrator:F >nul
 ICACLS C:\Windows\installer /grant administrator:F >nul
 
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command Move-Item -Path C:\Temp\*.* -Destination C:\Users\administrator\Downloads
-
 ping -n 10 127.0.0.1 >nul
